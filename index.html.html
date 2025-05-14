@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Você que é Especial</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #ffe6f0, #ffccff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      overflow-y: auto;
+      max-height: 90vh;
+      position: relative;
+    }
+
+    h1 {
+      color: #ff3399;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h2, h4 {
+      color: #cc0066;
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .heart {
+      font-size: 40px;
+      color: #ff3399;
+      animation: pulse 1s infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* Botão de música */
+    #music-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff3399;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    #music-btn:hover {
+      background: #cc0066;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Música de fundo com botão -->
+  <audio id="bg-music">
+    <source src="nervos.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="card">
+    <button id="music-btn">Tocar Música 🎵</button>
+
+    <h1>Feliz Aniversário, meu Amor! 🎉</h1>
+
+    <h2>Oi, Amor! Pequena Dedicatoria para Você</h2>
+
+    <p>Às vezes eu não sei nem por onde começar... você sempre fez tanto na minha vida nesse tempo que estamos juntos ღ</p>
+    <p>Sempre que olho para você, tenho agora a certeza de que vamos construir algo que vamos lembrar para sempre, até ficarmos velhinhos.</p>
+    <p>Você é a mulher que Deus colocou na minha vida, e sou grato por isso!</p>
+
+    <h4>Lembra da nossa primeira foto juntos? ♡</h4>
+    <img src="fotosjuntos.jpg" alt="Nossa primeira foto, você estava linda amor">
+
+    <p>Pense num floco de neve branco... na praia kkkj ❄️🏖️</p>
+
+    <h4>Essa foto aqui foi o melhor pôr do sol que eu já vi na minha vida</h4>
+    <img src="pordosol.jpg" alt="Acredito que você tenha achado lindo como eu kk">
+
+    <p>Às vezes me faltam palavras pra dizer o quanto você faz diferença na minha vida, e o quanto você é significante para os meus melhores e também piores dias.</p>
+    <p>Porque eu tenho o conforto de que você sempre estará ao meu lado. 🍀</p>
+
+    <p>Então, nesse dia em que você comemora mais uma volta ao sol, e o mundo sorri para você, quero desejar tudo de mais precioso — assim como você é na minha vida. Que você continue sendo luz em tudo que fizer. Amo muito você do fundo do meu coração. 💕</p>
+
+    <div class="heart">❤️</div>
+  </div>
+
+  <script>
+    const btn = document.getElementById("music-btn");
+    const audio = document.getElementById("bg-music");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (!isPlaying) {
+        audio.play();
+        btn.textContent = "Pausar Música ⏸️";
+      } else {
+        audio.pause();
+        btn.textContent = "Tocar Música 🎵";
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+     	
+
+    		
+<
